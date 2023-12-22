@@ -32,5 +32,4 @@ function setTheme(theme) {
     } else if (theme == "dark") {
         document.getElementById("switcher-id").href = "./themes/dark.css";
     }
-    localStorage.setItem(style, theme)
 }
