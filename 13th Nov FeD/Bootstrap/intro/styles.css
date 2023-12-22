@@ -1,0 +1,12 @@
+  .custom-btn {
+      /* Add your custom styles here */
+      background-color: #dc3545;
+      /* Red color, you can change it */
+      color: #fff;
+      /* White text, you can change it */
+      border: 1px solid #dc3545;
+      /* Border color same as background color */
+      padding: 5px 10px;
+      /* Adjust padding as needed */
+      cursor: pointer;
+  }

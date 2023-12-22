@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./favicon (1).ico" type="image/x-icon">
+    
+    <style>
+
+        .container {
+            background-color: rgb(102, 102, 102);
+            display: flex;
+            margin-left: 20px;
+            padding: 50px;
+            border-style: double;
+        }
+
+   
+
+        .card-container {
+            width: 150px;
+            height: 200px;
+            perspective: 300px;
+            padding: 20px;
+            border-style: groove;
+            margin-right: 50px;
+
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        /* flip a card hover */
+        .card-face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: aqua;
+            color: black;
+            border: 1px solid rgb(68, 157, 157);
+        }
+
+        .front-content {
+            transform: rotateY(0deg);
+        }
+
+        .back-content {
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            /* Background color for the back of the card */
+            color: rgb(255, 255, 255);
+            /* Text color on the back of the card */
+        }
+
+        /* Add styles to the image on the front of the card */
+        .front-content img {
+            max-width: 200px;
+            max-height: 200px;
+          /* fit diff szie imgae without strech*/
+            object-fit: cover;
+             /* ratio*/
+            aspect-ratio: 3/4; 
+        }
+        p{
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-face front-content">
+                <img src="./trisha-as-jessi.jpeg" alt="Front Image">
+            </div>
+            <div class="card-face card-back back-content">
+                <p>Trisha Akka <br> Details</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add more card containers as needed -->
+    <div class="card-container">
+        <div class="card">
+            <div class="card-face front-content">
+                <img src="./tamana.jpeg" alt="Front Image">
+            </div>
+            <div class="card-face card-back back-content">
+                <p>Tamana <3 <br> Details !</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-face front-content">
+                <img src="./vijay.webp" alt="Front Image">
+            </div>
+            <div class="card-face card-back back-content">
+                <p>Vijay Anna <br> Details!</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-face front-content">
+                <img src="./ajith_kumar_ultimate_star_of_kollywood-one_one.jpeg" alt="Front Image">
+            </div>
+            <div class="card-face card-back back-content">
+                <p>Ajith Sir <br> Details!</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

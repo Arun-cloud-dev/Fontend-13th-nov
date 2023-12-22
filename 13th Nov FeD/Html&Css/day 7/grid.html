@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .item1 {grid-area: header;}
+        .item2 {grid-area: menu;}
+        .item3 {grid-area: main;}
+        .item4 {grid-area: right;}
+        .item5{grid-area: footer;}
+
+
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer ';
+            gap: 10px;
+            background-color: rgb(111, 116, 116);
+            padding: 10px;
+
+
+        }
+
+      .grid-container > div{
+        background-color: aquamarine;
+        text-align: center;
+        padding: 20px 0 ; 
+        font-size: 30px;
+
+      }
+    </style>
+</head>
+<body>
+    <h1>grids layout</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem rerum animi ab voluptatum, eveniet ipsa ipsum mollitia veritatis iste itaque. Odit repellendus consequuntur quia a nemo? Ipsam corporis eius, dicta quidem unde suscipit hic nostrum placeat pariatur accusantium velit obcaecati officiis dolore minima recusandae magni assumenda ab sed laborum aperiam illum necessitatibus possimus. Natus, iure iusto.
+    </p>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+
+
+    <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+</iframe>
+
+
+</body>
+</html>
