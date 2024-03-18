@@ -1,24 +1,24 @@
-// if else and switch 
+if else and switch 
 
 
-// let age = 25;
+let age = 25;
 
-// if (age >= 18) {
-//     console.log("You are an Adult ");
-// } else {
-//     console.log("Yor are Not a Adult");
-// }
+if (age >= 18) {
+    console.log("You are an Adult ");
+} else {
+    console.log("Yor are Not a Adult");
+}
 
-// switch (expression) {
-//   case x:
-//     // code ex block
-//     break;
-//   case y:
-//     // code ex  block
-//     break;
-//   default:
-//   // code ex block
-// }
+switch (expression) {
+  case x:
+    // code ex block
+    break;
+  case y:
+    // code ex  block
+    break;
+  default:
+  // code ex block
+}
 
 
 
